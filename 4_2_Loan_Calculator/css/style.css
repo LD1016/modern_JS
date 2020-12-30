@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  /* background-color: #e8fdee; */
+  background-color: #494d5f;
+}
+
+.container {
+  margin: 20px auto;
+  width: 500px;
+  height: 600px;
+  /* background-color: #e5eaf5; */
+  background-color: #fff;
+  border: 3px solid #6c63ff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  padding: 30px;
+  font-size: 35px;
+  color: #0036bf;
+}
+
+.card {
+  padding: 5px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex: 1;
+  margin: 7px 0;
+}
+
+.input-group span {
+  padding: 5px;
+  background-color: #494d5f;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input:focus {
+  outline-color: #6c63ff;
+}
+
+.form-group #years {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.input-group input {
+  padding: 5px;
+}
+
+.input-group .cal {
+  width: 10%;
+}
+.input-group input.cal {
+  width: 90%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-group .res {
+  width: 37%;
+}
+.input-group input.res {
+  width: 63%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form-group .btn {
+  display: block;
+  padding: 5px 20px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  background-color: #00b0ff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+h3.red {
+  color: red;
+}
+
+h3 {
+  margin: 40px;
+}
