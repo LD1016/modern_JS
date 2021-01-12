@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #ccc;
+}
+.container {
+  margin: 50px 200px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #fff;
+  height: 80vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+form,
+ul {
+  margin: 10px 20px;
+}
+
+form > label,
+input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#submit {
+  padding: 5px 10px;
+  cursor: pointer;
+}
