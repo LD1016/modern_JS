@@ -23,10 +23,15 @@ function getText() {
 function getJson() {
   fetch('posts.json')
     .then(function (res) {
+      // console.log(res.json());
+      // return res.json();
+      // console.log(res.ok);
+      if (!res.ok) {
+        throw new Error(res.Error);
+      }
       return res.json();
     })
     .then(function (data) {
-      //   console.log(data);
       let output = '';
       data.forEach(function (item) {
         output += `<li>${item.title}</li>`;
@@ -56,3 +61,15 @@ function getUsers() {
       console.log(error);
     });
 }
+
+// Error Handling With Fetch
+// function handleErrors(res) {
+//   if (!res.ok) throw new Error(res.error);
+//   return res;
+// }
+
+// fetch('https://devcamper.io/api/v1/bootcamps/34343')
+//   .then(res => res.json())
+//   .then(handleErrors)
+//   .then(res => console.log(res.data))
+//   .catch(err => console.log(err));
